@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Happy Day</title>
+        <style>
+            fielset {
+                width: 300px;
+            }
+            
+            legend{
+                font-size: 20px;
+            }
+            
+            input.textbox{
+                width: 300px;
+                float: left;
+            }
+            
+            fieldset p{
+                clear: both;
+                padding: 3px;
+            }
+            
+            label.span, .required{
+                color: red;
+                font-weight: bold;
+            }
+            span{
+                color: red;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "signup">
+            <form name = 'login' method = 'get' action = 'login.jsp'>
+                <p class ="required">Required *</p>
+                <fieldset>
+                    <legend>Sign-Up Information</legend>
+                    <p>E-Mail<span>*</span>: <input type ='text' name ='email' required></p>                   
+                    <p>First Name<span>*</span>: <input type ='text' name ='first' required></p>                    
+                    <p>Last Name<span>*</span>: <input type ='text' name ='last' required></p>                  
+                    <p>Username<span>*</span>: <input type ='text' name ='username' required></p>                  
+                    <p>Birth Month<span>*</span>: <select name ='month'>
+                        <option value ='1' selected='selected'>January</option>
+                        <option value ='2'>February</option>
+                        <option value ='3'>March</option>
+                        <option value ='4'>April</option>
+                        <option value ='5'>May</option>
+                        <option value ='6'>June</option>
+                        <option value ='7'>July</option>
+                        <option value ='8'>August</option>
+                        <option value ='9'>September</option>
+                        <option value ='10'>October</option>
+                        <option value ='11'>November</option>
+                        <option value ='12'>December</option>
+                        </select></p>
+                        <p>Birth Year<span>*</span>: <input type ='text' name ='year' required></p>
+                        <p><input type="submit" name ='submit' value ="SIGN UP"></p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
